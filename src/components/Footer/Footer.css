@@ -1,0 +1,47 @@
+.footer {
+  background-color: rgba(248, 248, 248, 0.7);
+  padding: 20px 0 40px; /* Increased bottom padding */
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: #333;
+  position: relative;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center; /* Changed from space-between to center */
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.contact-info {
+  margin-bottom: 10px;
+  text-align: center; /* Ensure contact info is centered */
+}
+
+.contact-info p {
+  margin: 5px 0;
+}
+
+.copyright {
+  font-size: 0.9em;
+  color: #666;
+  text-align: center; /* Ensure copyright is centered */
+  width: 100%; /* Make sure it takes full width */
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+  }
+
+  .contact-info {
+    margin-bottom: 20px;
+  }
+}

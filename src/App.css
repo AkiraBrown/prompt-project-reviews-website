@@ -1,0 +1,35 @@
+.app-title {
+  text-align: center;
+  font-family: "Georgia", serif;
+  font-size: 2.5rem;
+  color: #333;
+  margin: 2rem 0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+body {
+  background: linear-gradient(
+    45deg,
+    #e6f2ff,
+    #b3d9ff,
+    #80bfff,
+    #4da6ff,
+    #1a8cff,
+    #0073e6,
+    #005ab3,
+    #004080
+  );
+  background-size: 400% 400%;
+  animation: gradientTransition 15s ease infinite;
+}
+
+@keyframes gradientTransition {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
